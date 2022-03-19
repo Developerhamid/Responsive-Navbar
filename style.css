@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Fredoka", sans-serif;
+  color: #000;
+}
+.nav-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: orange;
+}
+
+.nav-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.toggle-btn {
+  font-size: 1.5rem;
+  display: none;
+}
+
+.nav-links {
+  margin: 0 10px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.links li {
+  list-style: none;
+}
+
+.links a {
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.2rem;
+}
+
+.social-links {
+  font-size: 1.5rem;
+}
+
+.social-links i {
+  margin: 0 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .toggle-btn {
+    display: inline;
+  }
+
+  .social-links {
+    display: none;
+  }
+
+  .nav-center {
+    flex-direction: column;
+  }
+
+  .links {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    height: 0;
+    overflow: hidden;
+    transition: all .5s ease-in;
+  }
+
+  .show-links{
+      height: 10rem;
+  }
+  
+  .links li {
+    margin: 8px 0;
+  }
+
+  .nav-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-links {
+    width: 100%;
+  }
+}
